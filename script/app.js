@@ -3,9 +3,11 @@ const card = document.querySelector('.card');
 const details = document.querySelector('.details');
 
 const updateUI = (data) => {
-    const cityDats = data.cityDats;
-    const weather  = data.weather;
+    // const cityDats = data.cityDats;
+    // const weather  = data.weather;
 
+    //desttructure properties
+    const {cityDats , weather} = data;
     //update details template
     details.innerHTML = `
     <h5 class="my-3">${cityDats.EnglishName}</h5>
